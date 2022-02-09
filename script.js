@@ -56,32 +56,15 @@ let b = -4;
     // Обязательно использовать оператор return
 
 
-    function calculatePositivNum(a, b) {
-        let c = 0;
-        c = a + b;
-        return (c);
-    }
+    let  calculatePositivNum = (a, b) => a+b;
 
-    
-    function calculateNegativNum(a, b) {
-        let c = 0;
-        c = a - b;
-        return (c);
-    }
+    let  calculateNegativNum = (a, b) => a-b;
 
-    function calculateDivisionNum(a, b) {
-        let c = 0;
-        c = a / b;
-        return (c);
-    }
+    let  calculateDivisionNum = (a, b) => a/b;
 
-    function calculateMultiplyNum(a, b) {
-        let c = 0;
-        c = a * b;
-        return (c);
-    }
+    let  calculateMultiplyNum = (a, b) => a*b;
 
-
+   
 function mathOperation(arg1, arg2, operation) { 
     let a = arg1;
     let b = arg2; 
@@ -107,7 +90,7 @@ mathOperation(5, 5, calculateMultiplyNum);
 
 
 let money = prompt("Здравствуйте, какое количевство денег вы хотите поставить на счет в банке?");
-let str = String(money);
+let str = money;
 let strLegnht = str.length;
 let lastNumber = (str.slice(-1) );
 
