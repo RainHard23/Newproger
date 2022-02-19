@@ -1,119 +1,115 @@
-// 1. С помощью цикла for написать алгоритм для вывода чисел (выводите в консоль, с помощью console.log) от 0 до 10
-// включительно, чтобы результат выглядел так:
+"use strict"
+// function Product(name, price) {
+//   this.name = name;
+//   this.price = price;
+  
+// }
+
+// Product.prototype.make24PercentDiscount = function (){
+//   this.price =  this.price - this.price * 25 / 100;
+// };
+
+// const Epta = new Product ("xoxol", 100);
+// Epta.make24PercentDiscount();
+// console.log (Epta);
 
 
-// for (let i = 0; i <= 10; i++) {
-//     if (i % 2 === 0 && i != 0 ) {
-//         console.log (i + "-четное")
-//     } else if (i % 2 !== 0) {
-//         console.log (i + "-нечетное")
-//     } if (i === 0) {
-//         console.log ( i + "-ноль")
-//     }
+
+//  ЗАДАНИЕ 2 
+// class Product {
+//   constructor (name, price) {
+//     this.name = name;
+//     this.price = price;
+//   }
+//   make24PercentDiscount() {
+//     this.price =  this.price - this.price * 25 / 100;
+//   }
+// }
+
+// const Epta = new Product ("xoxol", 100);
+// Epta.make24PercentDiscount();
+// console.log (Epta);
+
+
+// ____________________________________________________________
+
+// function Post(author, text, date) {
+//   this.author = author;
+//   this.text = text;
+//   this.date = date;
+// }
+
+// Post.prototype.edit = function(moitext) {
+//   this.text = this.text = moitext;
+// }
+
+// const xoxli = new Post ("Stas", "saloo", 17.04);
+// xoxli.edit("lol");
+// console.log (xoxli);
+
+// function AttachedPost (author, text, date, highlighted) {
+//   Post.call(this, author, text, date);
+//   this.highlighted = highlighted = false;
+  
+// }
+
+// AttachedPost.prototype.makeTextHighlighted = function() {
+//   this.highlighted = this.highlighted = true;
+// }
+
+// const roflanLico = new AttachedPost ("ya", "slojno", 22.04);
+// roflanLico.makeTextHighlighted();
+// console.log (roflanLico);
+
+
+
+// class Post {
+//   constructor (author, text, date) {
+//     this.author = author;
+//     this.text = text;
+//     this.date = date;
+//   }
+//   edit(moitext) {
+//     this.text = this.text = moitext;
+//   } 
+// }
+
+// const xoxlo = new Post ("Stas", "saloo", 17.04);
+// xoxlo.edit("lol");
+// console.log (xoxlo);
+
+// class AttachedPost extends Post {
+//   constructor (author, text, date, highlighted) {
+//     super (author, text, date);
+//     this.highlighted = highlighted = false;
+//   }
+//   makeTextHighlighted() {
+//     this.highlighted = this.highlighted = true;
+//   }
+// }
+
+// const roflanLico = new AttachedPost ("ya", "slojno", 22.04);
+// roflanLico.makeTextHighlighted();
+// console.log (roflanLico);
+
+
+
+
+// class Test {
+//   calc(num) {
+//       if (!Number.isInteger(num) || num < 0 || num > 999) {
+//           return {};
+//       }
+    
+//       return {
+//         единицы: num % 10,
+//         сотни: Math.floor(num / 100),
+//         десятки: Math.floor(num / 10) % 10,
+//       };
+//   }
+
 // }
 
 
-
-
-// const post = {
-//     author: "John", //вывести этот текст
-//     postId: 23,
-//     comments: [
-//         {
-//             userId: 10,
-//             userName: "Alex",
-//             text: "lorem ipsum",
-//             rating: {
-//                 likes: 10,
-//                 dislikes: 2 //вывести это число
-//             }
-//         },
-//         {
-//             userId: 5, //вывести это число
-//             userName: "Jane",
-//             text: "lorem ipsum 2", //вывести этот текст
-//             rating: {
-//                 likes: 3,
-//                 dislikes: 1
-//             }
-//         },
-//     ]
-// };
-
-// console.log (post ["author"]);
-// console.log (post ['comments'][0]["rating"]["dislikes"]);
-// console.log (post ['comments'][1]["userId"]);
-// console.log (post ['comments'][1]["text"]);
-
-
-
-// const products = [
-//     {
-//         id: 3,
-//         price: 200,
-//     },
-//     {
-//         id: 4,
-//         price: 900,
-//     },
-//     {
-//         id: 1,
-//         price: 1000,
-//     },
-// ];
-
-// products.forEach(elem => {
-//     elem.price = elem.price / 100 * 85; 
-// })
-
-// console.log (products)
-
-    
-// const products = [
-//     {
-//         id: 3,
-//         price: 127,
-//         photos: [
-//             "1.jpg",
-//             "2.jpg",
-//         ]
-//     },
-//     {
-//         id: 5,
-//         price: 499,
-//         photos: []
-//     },
-//     {
-//         id: 10,
-//         price: 26,
-//         photos: [
-//             "3.jpg"
-//         ]
-//     },
-//     {
-//         id: 8,
-//         price: 78,
-//     },
-// ];
-
-// 1 функция
-
-// let newArr = products.filter((comment) => {
-//   if (comment.photos != "") {
-//       return comment.photos;
-//   }  
-// })
-// console.log (newArr); 
-
-// 2 функция 
-
-// let newArr2 = products.sort ((a, b) => a.price - b.price );
-// console.log (newArr2);
-
-for (let i = 0; i < 21; i++) {
-    let line = ''
-    for(let j = 0; j < i; j++) {
-      line += 'x'
-    }
-    console.log(`${line}`)
-  }
+// let test = new Test;
+// console.log(test.calc(45));
